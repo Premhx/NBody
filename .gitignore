@@ -235,3 +235,4 @@ dkms.conf
 *.mp4
 *.csv
 *.pkl
+*.png
