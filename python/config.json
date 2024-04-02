@@ -1,0 +1,21 @@
+{
+    "constants": {
+        "G": 1e-6,
+        "G_true": 6.67430e-11
+
+    },
+    "simulation": {
+        "dt": 0.01,
+        "num_steps": 500
+    },
+    "bodies": {
+        "N": 500,
+        "mass_factor": 1
+
+    },
+    "initial_conditions": {
+        "seed": 0,
+        "bounds": 50,
+        "mass_minimum": 0.00005
+    }
+}

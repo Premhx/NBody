@@ -1,0 +1,21 @@
+# file formats
+*.csv
+*.gif
+*.pdf
+*.pyc
+*.xls
+*.xlsx
+
+#virtualenv
+venv/
+
+# test directories
+test/
+
+# cache
+.ipynb_checkpoints/
+__pycache__/
+
+# miscellaneous
+.DS_Store
+nohup.out

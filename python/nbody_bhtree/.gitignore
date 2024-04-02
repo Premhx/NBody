@@ -1,0 +1,7 @@
+data_csv/
+unused/
+reading/
+build/
+__pycache__/
+octree.cpp
+*.so
