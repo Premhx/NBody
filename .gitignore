@@ -234,3 +234,4 @@ dkms.conf
 # Big files
 *.mp4
 *.csv
+*.pkl
