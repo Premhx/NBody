@@ -229,3 +229,8 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+
+
+# Big files
+*.mp4
+*.csv
