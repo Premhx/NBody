@@ -236,3 +236,5 @@ dkms.conf
 *.csv
 *.pkl
 *.png
+*.jpg
+*.jpeg
