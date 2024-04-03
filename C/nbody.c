@@ -4,8 +4,8 @@
 #include <time.h>
 #include <omp.h>
 
-#define N 10000
-#define STEPS 10000
+#define N 3000
+#define STEPS 3000
 #define DT 0.0001
 
 typedef struct {
