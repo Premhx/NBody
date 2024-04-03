@@ -20,8 +20,8 @@ double rand_double() {
 
 void rand_disc(double *pairs) {
     double theta = rand_double() * 2 * M_PI;
-    pairs[0] = cos(theta) * sqrt(rand_double()*100);
-    pairs[1] = sin(theta) * sqrt(rand_double()*100);
+    pairs[0] = cos(theta) * sqrt(rand_double());
+    pairs[1] = sin(theta) * sqrt(rand_double());
 }
 
 void rand_body(Body *body) {
