@@ -102,14 +102,12 @@ void simulate_and_save(int seed, int steps, const char *filename) {
         printf("Error opening file.\n");
         return;
     }
-    // fprintf(file, "step,body_id,x,y\n");
+    fprintf(file, "step,body_id,x,y\n");
     for (i = 0; i < steps; i++) {
         for (j = 0; j < N; j++) {
-            // fprintf(file, "%d,%d,%lf,%lf\n", i, j, bodies[j].pos[0], bodies[j].pos[1]);
-            fprintf(file, "%lf,%lf\n", bodies[j].pos[0], bodies[j].pos[1]);
+            fprintf(file, "%d,%d,%lf,%lf\n", i, j, bodies[j].pos[0], bodies[j].pos[1]);
 
         }
-        fprintf(file, "\n");
         update_bodies(bodies, N, DT);
 
         // Progress indication
