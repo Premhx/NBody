@@ -85,6 +85,18 @@ void simulate_and_save(int seed, int steps, const char *filename) {
         rand_body(&bodies[i]);
     }
 
+    FILE *body_masses_file = fopen("body_masses.csv", "w");
+    if (body_masses_file == NULL) {
+        printf("Error opening file.\n");
+        return;
+    }
+    fprintf(body_masses_file, "body_id,mass\n");
+    for (i = 0; i < N; i++) {
+        fprintf(body_masses_file, "%d,%lf\n", i, bodies[i].mass);
+    }
+
+    fclose(body_masses_file);
+
     FILE *file = fopen(filename, "w");
     if (file == NULL) {
         printf("Error opening file.\n");
